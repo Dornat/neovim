@@ -24,4 +24,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Airline.
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+
+    " FZF.
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
+
+    " Comments.
+    Plug 'tpope/vim-commentary'
+
+    " Projects starting screen.
+    Plug 'mhinz/vim-startify'
+
+    " Git support.
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
 call plug#end()

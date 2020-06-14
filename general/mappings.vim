@@ -18,10 +18,6 @@ nnoremap <C-p> :bprevious<CR>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Better tabbing.
-vnoremap < <gv
-vnoremap > >gv
-
 " Horizontal screen scroll.
 nnoremap <C-f> 10zl
 nnoremap <C-b> 10zh
