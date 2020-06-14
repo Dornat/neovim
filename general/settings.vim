@@ -28,3 +28,6 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
+set redrawtime=100000                   " When a php file is too big the syntax is breaking that's why we need to increase redraw time.
+set cc=120                              " For displaying a vertical line on 120 character.
+autocmd FileType css,scss,sass setlocal tabstop=2 shiftwidth=2

@@ -41,4 +41,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
+
+    " Snippets.
+    Plug 'SirVer/ultisnips'
+    Plug 'honza/vim-snippets'
+
+    " Support for php dockblock.
+    Plug 'tobyS/vmustache'
+    Plug 'tobyS/pdv'
+
+    " For displaying a line for code indent.
+    Plug 'Yggdroot/indentLine'
 call plug#end()
