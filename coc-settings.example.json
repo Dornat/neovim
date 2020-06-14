@@ -10,5 +10,7 @@
             "open"
         ],
         "v": "open:vsplit"
-    }
+    },
+    "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+    "html.filetypes": ["html", "handlebars", "htmldjango", "twig"]
 }
