@@ -64,6 +64,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" Fold everything.
+nmap <leader>zf :call CocAction('fold')<CR>
+
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
@@ -84,6 +87,8 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+" Formatting whole buffer.
+nmap <leader>hf  <Plug>(coc-format)
 
 augroup mygroup
   autocmd!
@@ -138,7 +143,7 @@ nnoremap <silent> <leader>ex  :<C-u>CocList extensions<cr>
 " Show commands.
 nnoremap <silent> <leader>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
-nnoremap <silent> <leader>o  :<C-u>CocList outline<cr>
+nnoremap <silent> <leader>o  :<C-u>CocList --tab -A outline<cr>
 " Search workspace symbols.
 nnoremap <silent> <leader>s  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.

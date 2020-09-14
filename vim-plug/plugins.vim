@@ -8,7 +8,7 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support.
-    Plug 'sheerun/vim-polyglot'
+    " Plug 'sheerun/vim-polyglot'
 
     " Auto pairs for '(' '[' '{'.
     Plug 'jiangmiao/auto-pairs'
@@ -46,10 +46,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
 
-    " Support for php dockblock.
-    Plug 'tobyS/vmustache'
-    Plug 'tobyS/pdv'
-
     " For displaying a line for code indent.
     Plug 'Yggdroot/indentLine'
+    
+    " For showing color for hex codes.
+    Plug 'ap/vim-css-color'
 call plug#end()

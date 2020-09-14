@@ -8,7 +8,7 @@ let g:startify_lists = [
     \ ]
 
 let g:startify_bookmarks = [
-    \ { 'c': '~/.config/i3/config' },
+    \ { 'd': '~/suckless/dwm/config.def.h' },
     \ { 'i': '~/.config/nvim/init.vim' },
     \ ]
 

@@ -2,3 +2,4 @@ undodir/
 autoload/
 session/
 coc-settings.json
+.netrwhist
