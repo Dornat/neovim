@@ -8,3 +8,5 @@ let g:airline_theme = 'gruvbox'
 
 " We don't need to see things like -- INSERT -- anymore.
 set noshowmode
+
+let g:airline_powerline_fonts = 1

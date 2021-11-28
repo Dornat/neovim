@@ -30,4 +30,9 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard+=unnamedplus              " Copy paste between vim and everything else
 set redrawtime=100000                   " When a php file is too big the syntax is breaking that's why we need to increase redraw time.
 set cc=120                              " For displaying a vertical line on 120 character.
-autocmd FileType css,scss,sass setlocal tabstop=2 shiftwidth=2
+autocmd Filetype css setlocal tabstop=2 shiftwidth=2 softtabstop=0 expandtab
+autocmd Filetype json setlocal tabstop=2 shiftwidth=2 softtabstop=0 expandtab
+autocmd Filetype scss setlocal tabstop=2 shiftwidth=2 softtabstop=0 expandtab
+autocmd Filetype typescript setlocal tabstop=2 shiftwidth=2 softtabstop=0 expandtab
+autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 softtabstop=0 expandtab
+autocmd Filetype yml setlocal tabstop=2 shiftwidth=2 softtabstop=0 expandtab

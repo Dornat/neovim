@@ -11,7 +11,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'sheerun/vim-polyglot'
 
     " Auto pairs for '(' '[' '{'.
-    Plug 'jiangmiao/auto-pairs'
+    " Plug 'jiangmiao/auto-pairs'
 
     " The best theme.
     Plug 'morhetz/gruvbox'
@@ -45,10 +45,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Snippets.
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
-
-    " For displaying a line for code indent.
-    Plug 'Yggdroot/indentLine'
     
     " For showing color for hex codes.
     Plug 'ap/vim-css-color'
+
+    " Solidity support.
+    Plug 'TovarishFin/vim-solidity'
+    " Plug 'tomlion/vim-solidity'
+    " Dockerfile syntax support.
+    Plug 'ekalinin/Dockerfile.vim'
+
+    " Icons
+    Plug 'ryanoasis/vim-devicons'
+
+    " Python
+    Plug 'untitled-ai/jupyter_ascending.vim'
+
 call plug#end()

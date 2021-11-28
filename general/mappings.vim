@@ -25,3 +25,7 @@ nnoremap <C-b> 10zh
 " Insert mode horizontal movement with ease.
 inoremap <C-f> <Right>
 inoremap <C-b> <Left>
+
+" Insert # %% field for jupyter notebook cell.
+autocmd FileType python inoremap kc<Space> # %%<CR>
+

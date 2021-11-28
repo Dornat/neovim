@@ -60,9 +60,18 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
+nnoremap <C-]> :call GoToTag()<CR>
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+function! GoToTag()
+" Try jumping to tag with ctags or if failed go with coc option.
+    try
+        exec 'tjump'
+    catch
+        call CocAction('jumpDefinition')
+    endtry
+endfunction
 
 " Fold everything.
 nmap <leader>zf :call CocAction('fold')<CR>
